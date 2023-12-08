@@ -1,0 +1,227 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+    background-color: #eee;
+    z-index: 1;
+}
+header:hover{
+    background-color: rgb(1, 19, 20);
+    color: white;
+}
+body{
+    background: #f5f3f3;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+header h1{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: rgb(45, 109, 114);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 450px 450px 450px 450px 450px 450px 450px 450px 450px 
+    450px 450px 450px 450px 450px 450px ;
+    gap: 30px;
+    margin: 18% 2%;
+}
+.card{
+    background-color: rgb(255, 251, 251);
+    box-shadow: 1px 2px 3px  rgb(22, 22, 22);
+}
+.card:hover{
+    background-color: rgb(255, 251, 251);
+    box-shadow: 1px 5px 7px  rgb(22, 22, 22);
+}
+div.sixteenth{
+    box-shadow: 1px 5px 7px rgb(22, 22, 22);
+}
+img{
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
+li{
+    list-style: none;
+}
+
+.card img{
+    width: 100%;
+    height: 85%;
+    padding-top: 50px;
+    overflow: hidden;
+    cursor: pointer;
+} 
+.add-minus{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.textarea{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    gap: 30px;
+}
+
+div.serve div{
+    color: #111111;
+    font-size: 1.9rem;
+    padding: 1em;
+    text-align: center;
+}
+div.serve div:hover{
+    border: 1px solid#111111;
+    background-color: rgb(45, 109, 114);
+    color: #eee;
+}
+.serve p{
+    text-align: center;
+}
+
+.serve p a{
+    color: rgb(45, 109, 114);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+.serve p a:hover{
+    color: rgb(2, 26, 27);
+}
+.navbar-links {
+    float: right;
+}
+.navbar-links a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+.navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+h3{
+    color: rgb(45, 109, 114);
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+h3 img{
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+h4{
+    text-align: center;
+    color: #111111;
+}
+.name{
+    text-align: center;
+    padding: 1.2rem;
+}
+input{
+    color: #111111;
+    height: 25px;
+}
+.navbar-links a {
+    display: block;
+    padding: 14px 0;
+}
+.nav-toggle {
+    display: block;
+}
+.end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #111111;
+    color: white;
+    align-items: center;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 3%;
+}
+.offers p,
+.address p{
+    line-height: 2rem;
+    margin: 20%;
+    font-size: 1.1rem;
+}
+@media (max-width: 900px){
+   header h1{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .end{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    i.fa-search,
+    input{
+        display: none;
+    }
+}
+@media (min-width: 1200px) and (orientation: landscape){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 500px 500px 500px 500px;
+    }
+    .services{
+        display: flex;
+        flex-direction: row;
+        margin: 10rem;
+        gap: 30px;
+    }
+    .name{
+        text-align: start;
+    }
+    h4{
+        display: none;
+    }
+}
